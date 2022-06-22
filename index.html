@@ -6,38 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="javascript.js" defer></script>
-    <title>Document</title>
+    <title>Sign up!</title>
 </head>
 <body>
     <header></header>
     <footer></footer>
     <body>
         <div class="leftPanel">
-            <div class="logoContainer"><img class="logo" src="odin-lined.png"></div>
-            <p class="photoCred">Photo by <a href='https://unsplash.com/@noodlenelson'>Brandon Nelson</a> on <a href="https://unsplash.com/photos/2smDZopBMso">Unsplash</a></p>
+            <div class="darken">
+                <div class="logoContainer"><img class="logo" src="odin-lined.png"></div>
+                <p class="photoCred">Photo by <a href='https://unsplash.com/@noodlenelson'>Brandon Nelson</a> on <a href="https://unsplash.com/photos/2smDZopBMso">Unsplash</a></p>
+            </div>
         </div>
         <div class="rightPanel">
-            <p class="formInfo">Do not sign up for this service. It is not real and you will not benefit in any way! It is only here to tempt you! Are you disciplined enough to resist!?</p>
-            <p class="formInfo">Please fill out the feilds below!</p>
+            <div class="formInfo">
+                <p class="Info">Do not sign up for this service. It is not real and you will not benefit in any way! It is only here to tempt you! Are you disciplined enough to resist!?</p>
+                <br><p class="Info">Please fill out the feilds below!</p>
+            </div>
             <br>
             <fieldset class="userInfo">
                 <form action="get">
                     <div class="formRow">
-                        <label for="fname">First name: </label>
+                        <label for="fname"><span class="formLabel">First name: </span></label>
                         <input type="text" id="fname">
-                        <label for="lname">Last name: </label>
+                    </div>
+                    <div class="formRow">
+                        <label for="lname"><span class="formLabel">Last name: </span></label>
                         <input type="text" id="lname">
                     </div>
                     <div class="formRow">
-                        <label for="email">Email: </label>
+                        <label for="email"><span class="formLabel">Email: </span></label>
                         <input type="email" id="email">
-                        <label for="phone">Phone number: </label>
+                    </div>
+                    <div class="formRow">
+                        <label for="phone"><span class="formLabel">Phone number: </span></label>
                         <input type="tel" id="phone">
                     </div>
                     <div class="formRow">
-                        <label for="pwd">Password: </label>
+                        <label for="pwd"><span class="formLabel">Password: </span></label>
                         <input type="password" id="pwd">
-                        <label for="confirmPwd">Confirm password: </label>
+                    </div>
+                    <div class="formRow">
+                        <label for="confirmPwd"><span class="formLabel">Confirm password: </span></label>
                         <input type="password" id="password">
                     </div>
                 </form>
@@ -45,7 +55,7 @@
                 <br>
                 <div class="submitForm">
                     <button type="submit">Submit</button>
-                    <p></p>
+                    <br><br><p>Already have an account? <a href="">Log in</a></p>
                 </div>    
 
         </div>

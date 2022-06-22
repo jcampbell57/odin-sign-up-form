@@ -4,7 +4,7 @@
     --font-color: white;
     --left-panel-width: 40vw;
     --right-panel-width: 60vw;
-    --border-color: darkorchid;
+    --border-color: rgb(143, 188, 143);
 }
 
 * {
@@ -22,7 +22,15 @@ body {
     background-image: url(lombard.jpg);
     background-position: center;
     background-size: cover;
-    border-right: 2px solid var(--border-color);
+    border-right: 6px solid white;
+    position: relative;
+}
+
+.darken {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: hsl(100, 50%, 0%, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,6 +57,9 @@ a,
 
 .photoCred {
     margin-top: auto;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .rightPanel {
@@ -57,29 +68,49 @@ a,
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .formInfo {
-    margin: 40px;
-    font-size: 2rem;
+    width: calc(var(--right-panel-width) * 0.8);
+    margin: 20px 40px;
+    font-size: 1.5rem;
 }
 
 .userInfo {
     border: none;
-    padding: 20px;
+    width: 100%;
+    padding: 0;
     background-color: lightcyan;
-    box-shadow: 0px 1px 6px black;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 1px 6px black;
 }
 
 form,
 label,
-.formRow {
+.formRow,
+.formLabel {
     background-color: inherit;
 }
 
-.formRow {
-    margin-top: 1rem;
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 20px 40px;
+    width: calc(var(--right-panel-width) * 0.8);
 }
+
+.formRow {
+    margin-top: 0.5rem;
+}
+
+.formLabel {
+    display: block;
+}
+
 
 label {
     color: black;
@@ -90,12 +121,21 @@ input {
     border: 1px solid var(--border-color);
     border-radius: 4px;
     height: 1.1rem;
+    margin-top: 4px;
+}
+
+.submitForm {
+    width: calc(var(--right-panel-width) * 0.8);
+    margin: 10px 40px;
 }
 
 button {
-    margin: 10px 40px;
     padding: 10px 20px;
     color: white;
     border: 2px solid var(--border-color);
     border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
 }
