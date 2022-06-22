@@ -27,7 +27,7 @@
                 <br><p class="Info">Fill out the fields below to continue!</p>
             </div>
             <br>
-            <form action="" method="get" class="userRegistration">
+            <form action="" method="get" class="userRegistration" onsubmit="return verification(this)">
                 <div class="userInfo">
                     <fieldset class="form1">
                         <legend>Let's do this!</legend>
@@ -49,7 +49,7 @@
                         </div>
                         <div class="formRow">
                             <div class="formItem">
-                                <label for="email"><span class="formLabel"><span id="required" style="color:darkred;">*</span> Email: </span></label>
+                                <label for="email"><span class="formLabel"><span id="required">*</span> Email: </span></label>
                                 <input type="email" 
                                        id="email" 
                                        name="contact"
@@ -67,7 +67,7 @@
                         <br>
                         <div class="formRow">
                             <div class="formItem">
-                                <label for="pwd"><span class="formLabel"><span id="required" style="color:darkred;">*</span> Password: </label>
+                                <label for="pwd"><span class="formLabel"><span id="required">*</span> Password: </label>
                                 <input type="password" 
                                        id="pwd" 
                                        name="pwd"
@@ -75,19 +75,20 @@
                                        required>
                             </div>
                             <div class="formItem">
-                                <label for="confirmPwd"><span class="formLabel"><span id="required" style="color:darkred;">*</span> Confirm password: </span></label>
+                                <label for="confirmPwd"><span class="formLabel"><span id="required">*</span> Confirm password: </span></label>
                                 <input type="password" 
                                        id="password" 
                                        name="pwd"
                                        placeholder="*******" 
                                        required>
                             </div>
+                            <br><span id="pwdVerification" ></span>
                         </div>
                     </fieldset>
                 </div>
                 <br>
                 <div class="submitForm">
-                    <button>Submit</button>
+                    <button id="newUser" type="submit">Submit</button>
                     <!-- open link in new tab with phishing protection -->
                     <br><br><p>Already have an account? <a href="https://github.com/jcampbell57" target="_blank" rel="noopener noreferrer">Log in</a></p>
                 </div>    

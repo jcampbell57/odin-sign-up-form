@@ -113,10 +113,15 @@ legend,
 .formRow,
 .formItem,
 .formLabel,
-#required {
+#required,
+#pwdVerification {
     background-color: inherit;
 }
 
+#required,
+#pwdVerification {
+    color: darkred;
+}
 
 .form1 {
     border: none;
@@ -162,7 +167,7 @@ input {
     margin-top: 4px;
 }
 
-input:invalid {
+input[type='password']:invalid {
     border: 1px solid darkred;
 }
 
