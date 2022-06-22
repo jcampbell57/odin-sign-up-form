@@ -5,6 +5,7 @@
     --left-panel-width: 40vw;
     --right-panel-width: 60vw;
     --border-color: rgb(143, 188, 143);
+    --logowidth: calc(var(--left-panel-width) * .7)
 }
 
 * {
@@ -37,12 +38,14 @@ body {
     justify-content: center;
 }
 
-.logoContainer {
+.logoContainer,
+.photoCred {
     margin-top: auto;
     padding: 10px;
     background: hsl(25, 50%, 100%, 0.3);
     border: 6px solid white;
-    width: calc(var(--left-panel-width) * .7);
+    border-radius: 12px;
+    width: min(var(--logowidth), calc(80vh/1.3));
 }
 
 .logo {
@@ -50,14 +53,17 @@ body {
 }
 
 a,
-.logo,
-.photoCred {
+.logo {
     background: none;
 }
 
 .photoCred {
     margin-top: auto;
-    color: white;
+    margin-bottom: 10px;
+    /* color: white; */
+    background: hsl(25, 50%, 100%, 0.7);
+    border: none;
+    text-align: center;
     font-size: 1.1rem;
     font-weight: 500;
 }
@@ -90,21 +96,33 @@ a,
 form,
 label,
 .formRow,
-.formLabel {
+.formItem,
+.formLabel,
+#required {
     background-color: inherit;
 }
 
 form {
+    /* display: flex;
+    flex-direction: column;
+    gap: 6px; */
+    margin: 20px 40px;
+    width: calc(var(--right-panel-width) * 0.8);
+    /* border: 1px solid red; */
+}
+
+.formRow {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 6px;
-    margin: 20px 40px;
-    width: calc(var(--right-panel-width) * 0.8);
+    /* border: 1px solid green; */
+
 }
 
-.formRow {
+.formItem {
     margin-top: 0.5rem;
+    /* border: 1px solid blue; */
 }
 
 .formLabel {

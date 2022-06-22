@@ -21,40 +21,47 @@
         <div class="rightPanel">
             <div class="formInfo">
                 <p class="Info">Do not sign up for this service. It is not real and you will not benefit in any way! It is only here to tempt you! Are you disciplined enough to resist!?</p>
-                <br><p class="Info">Please fill out the feilds below!</p>
+                <br><p class="Info">Fill out the fields below to continue!</p>
             </div>
             <br>
             <fieldset class="userInfo">
                 <form action="get">
                     <div class="formRow">
-                        <label for="fname"><span class="formLabel">First name: </span></label>
-                        <input type="text" id="fname">
+                        <div class="formItem" id="newUser">
+                            <label for="fname"><span class="formLabel">First name: </span></label>
+                            <input type="text" id="fname">
+                        </div>
+                        <div class="formItem">
+                            <label for="lname"><span class="formLabel">Last name: </span></label>
+                            <input type="text" id="lname">
+                        </div>
                     </div>
                     <div class="formRow">
-                        <label for="lname"><span class="formLabel">Last name: </span></label>
-                        <input type="text" id="lname">
+                        <div class="formItem">
+                            <label for="email"><span class="formLabel"><span id="required" style="color:darkred;">*</span> Email: </span></label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="formItem">
+                            <label for="phone"><span class="formLabel">Phone number: </span></label>
+                            <input type="tel" id="phone">
+                        </div>
                     </div>
+                    <br>
                     <div class="formRow">
-                        <label for="email"><span class="formLabel">Email: </span></label>
-                        <input type="email" id="email">
-                    </div>
-                    <div class="formRow">
-                        <label for="phone"><span class="formLabel">Phone number: </span></label>
-                        <input type="tel" id="phone">
-                    </div>
-                    <div class="formRow">
-                        <label for="pwd"><span class="formLabel">Password: </span></label>
-                        <input type="password" id="pwd">
-                    </div>
-                    <div class="formRow">
-                        <label for="confirmPwd"><span class="formLabel">Confirm password: </span></label>
-                        <input type="password" id="password">
-                    </div>
-                </form>
+                        <div class="formItem">
+                            <label for="pwd"><span class="formLabel"><span id="required" style="color:darkred;">*</span> Password: </label>
+                            <input type="password" id="pwd" required>
+                        </div>
+                        <div class="formItem">
+                            <label for="confirmPwd"><span class="formLabel"><span id="required" style="color:darkred;">*</span> Confirm password: </span></label>
+                            <input type="password" id="password" required>
+                        </div>
+                    </form>
+                        </div>
                 </fieldset>
                 <br>
                 <div class="submitForm">
-                    <button type="submit">Submit</button>
+                    <button type="submit" id="newUser">Submit</button>
                     <br><br><p>Already have an account? <a href="">Log in</a></p>
                 </div>    
 
