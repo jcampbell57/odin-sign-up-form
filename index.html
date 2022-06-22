@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -13,11 +13,12 @@
     <footer></footer>
     <body>
         <div class="leftPanel">
-            <div class="logo"></div>
-            <p class="photoCred"></p>
+            <div class="logo"><img src="odin-lined.png"></div>
+            <p class="photoCred">Photo by <a href='https://unsplash.com/@noodlenelson'>Brandon Nelson</a> on <a href="https://unsplash.com/photos/2smDZopBMso">Unsplash</a></p>
         </div>
         <div class="rightPanel">
             <p class="formInfo">Do not sign up for this service. It is not real and you will not benefit in any way! It is only here to tempt you! Are you disciplined enough to resist!?</p>
+            <p class="formInfo">Please fill out the feilds below!</p>
             <br>
             <fieldset class="userInfo">
                 <form action="submit">
@@ -29,12 +30,13 @@
                     <input type="text" id="formSubmit">
                     <input type="text" id="formSubmit">
                 </form>
+                </fieldset>
                 <br>
                 <div class="submitForm">
                     <button type="submit">Submit</button>
                     <p></p>
                 </div>    
-                </fieldset>
+
         </div>
     </body>
 </body>

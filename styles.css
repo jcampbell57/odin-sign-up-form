@@ -2,6 +2,8 @@
 :root {
     --background-color: lightslategray;
     --font-color: white;
+    --left-panel-width: 40vw;
+    --right-panel-width: 60vw;
 }
 
 * {
@@ -14,25 +16,47 @@ body {
 }
 
 .leftPanel {
-    width: 35vw;
-    height: calc(100vh - 4px);
-    border: 2px solid pink;
+    width: var(--left-panel-width);
+    height: 100vh;
+    background-image: url(lombard.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin-top: auto;
+    background: none;
+}
+
+.photoCred {
+    margin-top: auto;
 }
 
 .rightPanel {
-    width: 65vw;
-    border: 2px solid turquoise;
+    width: var(--right-panel-width);
     color: var(--font-color, white);
-    padding: 40px
+}
+
+.formInfo {
+    margin: 40px;
+    font-size: 2rem;
 }
 
 .userInfo {
     border: none;
+    padding: 20px;
+    background-color: lightcyan;
+    box-shadow: 0px 1px 6px black;
 }
 
 button {
+    margin: 10px 40px;
     padding: 10px 20px;
     color: white;
-    border: 2px solid pink;
+    border: 2px solid darkorchid;
     border-radius: 5px;
 }
