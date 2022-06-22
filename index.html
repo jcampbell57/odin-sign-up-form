@@ -13,7 +13,7 @@
     <footer></footer>
     <body>
         <div class="leftPanel">
-            <div class="logo"><img src="odin-lined.png"></div>
+            <div class="logoContainer"><img class="logo" src="odin-lined.png"></div>
             <p class="photoCred">Photo by <a href='https://unsplash.com/@noodlenelson'>Brandon Nelson</a> on <a href="https://unsplash.com/photos/2smDZopBMso">Unsplash</a></p>
         </div>
         <div class="rightPanel">
@@ -21,14 +21,25 @@
             <p class="formInfo">Please fill out the feilds below!</p>
             <br>
             <fieldset class="userInfo">
-                <form action="submit">
-                    <label for="formSubmit"></label>
-                    <input type="text" id="formSubmit">
-                    <input type="text" id="formSubmit">
-                    <input type="text" id="formSubmit">
-                    <input type="text" id="formSubmit">
-                    <input type="text" id="formSubmit">
-                    <input type="text" id="formSubmit">
+                <form action="get">
+                    <div class="formRow">
+                        <label for="fname">First name: </label>
+                        <input type="text" id="fname">
+                        <label for="lname">Last name: </label>
+                        <input type="text" id="lname">
+                    </div>
+                    <div class="formRow">
+                        <label for="email">Email: </label>
+                        <input type="email" id="email">
+                        <label for="phone">Phone number: </label>
+                        <input type="tel" id="phone">
+                    </div>
+                    <div class="formRow">
+                        <label for="pwd">Password: </label>
+                        <input type="password" id="pwd">
+                        <label for="confirmPwd">Confirm password: </label>
+                        <input type="password" id="password">
+                    </div>
                 </form>
                 </fieldset>
                 <br>

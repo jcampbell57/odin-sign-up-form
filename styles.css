@@ -4,6 +4,7 @@
     --font-color: white;
     --left-panel-width: 40vw;
     --right-panel-width: 60vw;
+    --border-color: darkorchid;
 }
 
 * {
@@ -21,14 +22,28 @@ body {
     background-image: url(lombard.jpg);
     background-position: center;
     background-size: cover;
+    border-right: 2px solid var(--border-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.logo {
+.logoContainer {
     margin-top: auto;
+    padding: 10px;
+    background: hsl(25, 50%, 100%, 0.3);
+    border: 6px solid white;
+    width: calc(var(--left-panel-width) * .7);
+}
+
+.logo {
+    width: inherit;
+}
+
+a,
+.logo,
+.photoCred {
     background: none;
 }
 
@@ -39,6 +54,9 @@ body {
 .rightPanel {
     width: var(--right-panel-width);
     color: var(--font-color, white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .formInfo {
@@ -53,10 +71,31 @@ body {
     box-shadow: 0px 1px 6px black;
 }
 
+form,
+label,
+.formRow {
+    background-color: inherit;
+}
+
+.formRow {
+    margin-top: 1rem;
+}
+
+label {
+    color: black;
+}
+
+input {
+    background-color: whitesmoke;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    height: 1.1rem;
+}
+
 button {
     margin: 10px 40px;
     padding: 10px 20px;
     color: white;
-    border: 2px solid darkorchid;
+    border: 2px solid var(--border-color);
     border-radius: 5px;
 }
