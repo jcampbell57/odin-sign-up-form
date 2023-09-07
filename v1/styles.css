@@ -21,7 +21,7 @@ body {
 .leftPanel {
     width: var(--left-panel-width);
     height: 100vh;
-    background-image: url(lombard.jpg);
+    background-image: url(../assets/lombard.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
