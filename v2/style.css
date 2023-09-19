@@ -1,0 +1,56 @@
+:root {
+  --background-color: lightsteelblue;
+  --left-panel-width: 40vw;
+  --right-panel-width: 60vw;
+}
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  display: flex;
+  height: 100vh;
+  background-color: var(--background-color, lightsteelblue);
+}
+
+.leftPanel {
+  background-image: url(../assets/lombard.jpg);
+  background-position: center;
+  background-size: cover;
+
+  height: 100vh;
+  width: var(--left-panel-width);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.logoContainer {
+  background: rgb(245, 245, 245, 0.6);
+  padding: 1em;
+
+  border: 6px solid whitesmoke;
+  border-radius: 1em;
+}
+
+.photoCred {
+  top: auto;
+  position: absolute;
+  bottom: 1em;
+
+  background: rgb(245, 245, 245, 0.7);
+  padding: 0.5em;
+
+  border: 2px solid whitesmoke;
+  border-radius: 0.5em;
+}
+
+.rightPanel {
+  width: var(--right-panel-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
