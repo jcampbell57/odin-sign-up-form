@@ -71,12 +71,11 @@ a {
 
 .formInfo {
   padding: 1em 2rem;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 form {
   width: inherit;
-  font-size: 1.4rem;
 }
 
 .fieldsetContainer {
@@ -86,12 +85,58 @@ form {
 }
 
 fieldset {
-  line-height: 1.6rem;
+  line-height: 2rem;
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.required {
+  color: darkred;
+}
+
+input {
+  border: 1px solid gray;
+}
+
+input:required:valid  {
+  border: 1px solid green;
+}
+
+input:invalid {
+  border: 1px solid darkred;
+  background-color: rgb(255, 235, 238);
+}
+
+input:focus:invalid {
+  background-color: white;
+} 
+
+input:placeholder-shown {
+  border: 1px solid gray;
+  background-color: white;
 }
 
 .submitBtn {
   margin-top: 1rem;
   margin-left: 2rem;
+
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+
+  box-shadow: 3px 3px 3px dimgray;
+}
+
+.submitBtn:hover {
+  box-shadow: 3px 3px 3px rgb(42, 42, 42);
+}
+
+.submitBtn:active {
+  box-shadow: 2px 2px 3px rgb(42, 42, 42);
 }
 
 .logInPrompt {
