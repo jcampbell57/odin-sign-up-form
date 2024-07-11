@@ -8,3 +8,7 @@ I anticipate that I will be able to reinforce a lot of basic skills in this proj
 
 V2 could be improved by:
 - specifying which specific password criteria is invalid within the Custom Validity
+
+## Screenshot
+
+![Sign-up Form](assets/sign-up-form-600w.png)
