@@ -223,6 +223,7 @@ input:placeholder-shown {
 
   .formInfo {
     font-size: 1.1rem;
+    width: unset;
   }
 
   .sign-up-form {
